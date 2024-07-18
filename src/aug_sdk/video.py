@@ -138,5 +138,4 @@ class AugmendVideoClient:
         }
         response = requests.get(url, headers=headers, verify=self.verify_ssl)
         data = response.json()
-        document = data[document_type]
-        return document
+        return data
